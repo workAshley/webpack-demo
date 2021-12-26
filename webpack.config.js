@@ -8,10 +8,10 @@ module.exports = {
       import: './src/index.js',
       dependOn: 'shared'
     },
-    another: {
-      import: './src/another-module.js',
-      dependOn: 'shared'
-    },
+    // another: {
+    //   import: './src/another-module.js',
+    //   dependOn: 'shared'
+    // },
     shared: 'lodash'
   },
   devtool: 'inline-source-map',
@@ -29,7 +29,7 @@ module.exports = {
     clean: true,
     publicPath: '/'
   },
-  optimization: {
-    runtimeChunk: 'single'
-  }
+  // optimization: {
+  //   runtimeChunk: 'single'
+  // }
 }
