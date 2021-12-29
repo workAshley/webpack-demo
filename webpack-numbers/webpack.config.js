@@ -4,6 +4,10 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'webpack-numbers.js'
+    filename: 'webpack-numbers.js',
+    library: {
+      name: 'webpackNumbers',
+      type: 'umd'
+    }
   }
 }
